@@ -1,0 +1,12 @@
+// Consumes documentreadersdk.aar already in this folder.
+// The demo app applies install.gradle, which uses this module when the AAR is here.
+def aar = file("documentreadersdk.aar")
+if (!aar.exists()) {
+    throw new GradleException(
+        "Missing libdocsdk/documentreadersdk.aar.\n" +
+        "Keep that AAR in libdocsdk/, or apply install.gradle so the app " +
+        "downloads the v1.0.0 GitHub Release."
+    )
+}
+configurations.maybeCreate("default")
+artifacts.add("default", aar)

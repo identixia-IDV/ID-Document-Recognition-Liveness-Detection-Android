@@ -1,0 +1,43 @@
+// Identixia Document Recognition + Liveness.
+// The sample app applies this file and keeps using :libdocsdk when that module
+// and documentreadersdk.aar are already in the repo (same dependency as before).
+// An app that does not contain :libdocsdk downloads the v1.0.0 Release.
+// The AAR already contains document.xdb.
+
+def identixiaVersion = "v1.0.0"
+def identixiaAarName = "documentreadersdk.aar"
+def identixiaRelease = "https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/releases/download/${identixiaVersion}/${identixiaAarName}"
+
+def localModule = findProject(":libdocsdk")
+def localAar = rootProject.file("libdocsdk/${identixiaAarName}")
+
+if (localModule != null && localAar.exists()) {
+    dependencies {
+        implementation project(":libdocsdk")
+    }
+} else {
+    def cache = new File(rootProject.projectDir, ".identixia/document")
+    cache.mkdirs()
+    def aarFile = new File(cache, identixiaAarName)
+    if (!aarFile.exists() && localAar.exists()) {
+        java.nio.file.Files.copy(localAar.toPath(), aarFile.toPath())
+    }
+    if (!aarFile.exists()) {
+        logger.lifecycle("Identixia: downloading ${identixiaAarName} (${identixiaVersion})")
+        try {
+            new URL(identixiaRelease).withInputStream { input ->
+                aarFile.withOutputStream { out -> out << input }
+            }
+        } catch (Exception e) {
+            throw new GradleException(
+                "Missing ${identixiaAarName}. Download failed: ${identixiaRelease}\n${e.message}"
+            )
+        }
+    }
+    if (!aarFile.exists() || aarFile.length() < 1024) {
+        throw new GradleException("Missing ${identixiaAarName} after ${identixiaRelease}")
+    }
+    dependencies {
+        implementation files(aarFile)
+    }
+}
