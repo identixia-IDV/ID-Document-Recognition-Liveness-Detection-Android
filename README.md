@@ -129,9 +129,9 @@ Keep `minSdk 24`. Then activate → init → recognize. The license key must mat
 
 The code below shows how to use the license:
 
-https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/b9e41ecd8190243b0c7a3b57158a4c89e728aa77/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L25-L27
+https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/f6afeb66b336b1f02b079148190d775e96566e19/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L25-L27
 
-https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/b9e41ecd8190243b0c7a3b57158a4c89e728aa77/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L56-L59
+https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/f6afeb66b336b1f02b079148190d775e96566e19/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L56-L59
 
 Please [contact us](#-contact) to get a license for **your own app**.
 
