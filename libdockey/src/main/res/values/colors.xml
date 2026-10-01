@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ix_accent">#0F766E</color>
+    <color name="ix_muted">#5A6573</color>
+    <color name="ix_overlay">#CCE6E9EF</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DocumentReader" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/ix_accent</item>
+        <item name="colorPrimaryVariant">@color/ix_accent_dim</item>
+        <item name="colorOnPrimary">@color/ix_on_accent</item>
+        <item name="colorSecondary">@color/ix_accent</item>
+        <item name="colorOnSecondary">@color/ix_on_accent</item>
+        <item name="android:statusBarColor">@color/ix_bg</item>
+        <item name="android:navigationBarColor">@color/ix_bg</item>
+        <item name="android:windowBackground">@color/ix_bg</item>
+        <item name="android:textColorPrimary">@color/ix_text</item>
+        <item name="android:textColorSecondary">@color/ix_muted</item>
+        <item name="colorSurface">@color/ix_surface</item>
+        <item name="colorOnSurface">@color/ix_text</item>
+    </style>
+
+
+    <style name="Theme.DocumentReader.Camera" parent="Theme.DocumentReader">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
