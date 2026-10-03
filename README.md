@@ -131,9 +131,9 @@ Keep `minSdk 24`, `abiFilters` `arm64-v8a`, and `packaging { jniLibs { useLegacy
 
 The code below shows how to use the license:
 
-[https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/88eb3c8c8c6453d4b7ac097b1b064003d495c721/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L31-L33](https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/88eb3c8c8c6453d4b7ac097b1b064003d495c721/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L31-L33)
+[https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/b1072f37fc2f704b75a3d7c52630618b956051af/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L31-L33](https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/b1072f37fc2f704b75a3d7c52630618b956051af/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L31-L33)
 
-[https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/88eb3c8c8c6453d4b7ac097b1b064003d495c721/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L76-L77](https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/88eb3c8c8c6453d4b7ac097b1b064003d495c721/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L76-L77)
+[https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/b1072f37fc2f704b75a3d7c52630618b956051af/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L76-L77](https://github.com/identixia-IDV/ID-Document-Recognition-Liveness-Detection-Android/blob/b1072f37fc2f704b75a3d7c52630618b956051af/app/src/main/java/com/identixia/documentreader/MainActivity.kt#L76-L77)
 
 Please [contact us](#-contact) to get a license for **your own app**.
 
