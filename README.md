@@ -142,7 +142,7 @@ Please [contact us](#-contact) to get a license for **your own app**.
 ## <img src="https://api.iconify.design/lucide/puzzle.svg?color=%230F766E" width="24" height="24" alt="" /> Use in your app
 
 1. In the app module, apply `install.gradle` from tag `v1.0.0` (see Install above) — engine + `libdockey`.
-2. Activate → init → recognize (prefer kit helpers over raw engine calls).
+2. Activate → init → `recognize` / `documentProcess` (prefer kit helpers over raw engine calls). Same process JSON idea as the Windows / Docker HTTP API.
 3. Keep the demo `applicationId` only while using the sample license.
 
 ---
